@@ -1,4 +1,7 @@
 # Spotify
+This is a Sample App which utilizes last.fm web api.
+    -show details about artist,albums,tracks
+    -search music
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
