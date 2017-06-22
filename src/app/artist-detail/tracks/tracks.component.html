@@ -1,0 +1,18 @@
+<div class="row">
+  <h4 style="color:white">Top Songs</h4>
+  <div  style="margin:auto;width:60%">
+  <ol>
+  <li   *ngFor="let s of tracks"  class="tracklist" style="display:block-inline;height:50px;">
+    
+        <span style="float:left">{{s.name}}</span>
+        <span style="float:right">
+
+        Listeners:{{s.listeners}}|playcount:{{s.playcount}}
+  
+        </span>
+   
+    
+  <li>
+</ol>
+  </div>
+</div>

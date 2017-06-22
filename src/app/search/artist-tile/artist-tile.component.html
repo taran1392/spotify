@@ -1,0 +1,14 @@
+<div class="row" *ngIf="searchResults">
+  <p>Artists</p><hr>
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2"  *ngFor="let s of searchResults" >
+    <a [routerLink]="['/artist',s.mbid]">
+    <div class="thumbnail"   >
+      <img src="{{s.image[3]['#text']}}" class="img-circle" >
+      <div class="caption">
+        <h4>{{s.name}}</h4>
+        Listeners:{{s.listeners}}
+         </div>
+    </div>
+    </a>
+  </div>
+</div>

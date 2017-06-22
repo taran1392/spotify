@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-12 col-xs-12">
+<ul class="nav nav-pills">
+  <li [ngClass]="filterStr=='track'?'active':''" ><a (click)="filter('track')">Track</a></li>
+  <li [ngClass]="filterStr=='album'?'active':''"><a (click)="filter('album')">Album</a></li>
+  <li [ngClass]="filterStr=='artist'?'active':''"><a (click)="filter('artist')">Artist</a></li>
+</ul>
+
+<div class="row" *ngIf="filterStr=='track'">
+  <app-track [searchTerm]="searchTerm"></app-track>
+</div>
+
+
+<div class="row" *ngIf="filterStr=='album'">
+<app-album [searchTerm]="searchTerm" > </app-album>
+
+</div>
+
+<div class="row" *ngIf="filterStr=='artist'">
+<app-artist-tile [searchTerm]="searchTerm" ></app-artist-tile>
+</div>
+</div>
+</div>

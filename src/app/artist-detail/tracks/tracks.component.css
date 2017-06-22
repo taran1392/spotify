@@ -1,0 +1,21 @@
+.tracklist{
+
+
+    color: hsla(0,0%,100%,.5);
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+li{
+
+
+    color: white;
+padding: 5px;
+}
+
+li:hover{
+
+
+    background: black;
+}

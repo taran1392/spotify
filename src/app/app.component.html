@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+  <div class="input-group input-group-lg">
+  <input type="Search" class="form-control" [(ngModel)]="searchStr" (keyup.enter)="search()" placeholder="search track,artist or album" aria-describedby="sizing-addon1">
+<span class="input-group-btn"   >
+        <button class="btn btn-success" type="button" (click)="search()">Search!</button>
+      </span>
+</div>
+
+</div>
+</div>
+<router-outlet></router-outlet>
+</div>

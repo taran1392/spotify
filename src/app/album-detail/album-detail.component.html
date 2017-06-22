@@ -1,0 +1,35 @@
+<div class="row" *ngIf="album">
+
+<div class="col-sm-6 col-xs-12">
+  <div class="thumbnail"   >
+  <img src="{{album.image[2]['#text']?album.image[2]['#text']:'assets/album.ico'}}" style="max-width:150px" class="img-rounded" >
+      <div class="caption">
+        <h4>{{album.name}}</h4>
+        <a [routerLink]="['/artist',album.tracks.track[0].artist.mbid]">By {{album.artist}}</a>
+        <p>
+            {{album.wiki.summary}}
+
+
+        </p>
+        </div>
+
+        </div>
+
+  </div>
+
+
+<div class="col-sm-6 col-xs-12">
+<h4>Tracks</h4>
+ <ol>
+  <li   *ngFor="let s of album.tracks.track"  class="tracklist" style="display:block-inline;height:50px;">
+    
+        <span style="float:left">{{s.name}}</span>
+        <span style="float:right">
+            {{s.duration|duration}}
+        </span>
+   
+    
+  <li>
+</ol>
+  </div>
+  </div>

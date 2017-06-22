@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+background-color: #181818;
+    font-size: 14px;
+    font-weight: 200;
+    min-width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-font-smoothing: antialiased;
+    font-family: cursive;
+    }
+
+    app-root{
+
+        width:100%;
+        padding-top: 50px;
+    }
+
+    ul{
+                margin-top: 50px;
+        display: inline-block
+    }
+    div{
+
+text-align: center
+
+    }
+
+    .thumbnail>img:hover{
+            opacity: 0.6;
+
+
+    }
+    .thumbnail{
+
+        padding: 0;
+background-color: #181818;
+border:0px solid;
+color: white;
+        
+    }
+
+
+    .thumbnail>.caption{
+color:white;
+
+    }

@@ -1,0 +1,17 @@
+<div class="jumbotron"  >
+  <img src="{{backgroundImg}}">
+  <h1>{{artist.name}}</h1>
+  <p >Listeners:{{artist.stats.listeners}}|playcount:{{artist.stats.playcount}}</p>
+  
+</div>
+<div class="row" style="margin-top:-150px">
+<ul class="nav nav-pills">
+  <li ><a [routerLink]="['./overview',artist.mbid ]" routerLinkActive="active" >Overview</a></li>
+  <li  ><a [routerLink]="['./tracks',artist.mbid ]" [routerLinkActive]="'active'">Tracks</a></li>
+  <li ><a [routerLink]="['./albums',artist.mbid ]" [routerLinkActive]="'active'" >Albums</a></li>
+  <li ><a [routerLink]="['./similar',artist.mbid ]" [routerLinkActive]="'active'">Similar Artist</a></li>
+</ul>
+
+
+  <router-outlet></router-outlet>
+</div>
